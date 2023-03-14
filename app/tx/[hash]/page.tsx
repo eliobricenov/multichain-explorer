@@ -25,7 +25,7 @@ export default async function TxDetailPage(props: Props) {
   }
 
   return (
-    <div className="flex flex-wrap flex-col border border-gray-300 rounded shadow p-6 divide-y">
+    <div className="flex flex-wrap flex-col border border-gray-300 rounded shadow p-6 divide-y break-all">
       <TxDetail transaction={transaction} />
     </div>
   );

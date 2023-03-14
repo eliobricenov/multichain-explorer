@@ -1,18 +1,10 @@
 import { getTxDetail } from "@/lib";
-import dayjs from "dayjs";
-import relativeTime from "dayjs/plugin/relativeTime";
 import TxDetail from "@/components/TxDetail";
 import { ExclamationCircleIcon } from "@heroicons/react/24/outline";
 
-dayjs.extend(relativeTime);
-
-interface Props {
-  params: {
-    hash: string;
-  };
-}
-
-export default async function TxDetailPage(props: Props) {
+export default async function TxDetailPage(props: {
+  params: { hash: string };
+}) {
   const transaction = await getTxDetail(props.params.hash);
 
   if (!transaction) {

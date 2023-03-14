@@ -4,9 +4,11 @@ with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/
 ### Summary
 
 Multichain Explorer is an alternative explorer that leverages the power of the Etherscan and PolygonScan API to display
-the transactions and address and transactions information of Ethereum and Polygon transactions.
+information about the address and transactions of Ethereum and Polygon accounts.
 
-### Getting Started
+It is deployed on vercel and is available in https://multichain-explorer-ochre.vercel.app.
+
+### Local Development
 
 First, add the Etherscan and Polygonscan API KEYS in a `.env.local` file:
 
